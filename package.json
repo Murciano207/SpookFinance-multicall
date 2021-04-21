@@ -1,0 +1,31 @@
+{
+  "name": "bsccall",
+  "version": "1.0.0",
+  "description": "ethers.js-compatible wrapper around Multicall for BSC",
+  "main": "lib/index.js",
+  "contributors": [
+    "Jamie Riverson <jamie.r.crypto@pm.me>",
+    "Exhyn <exhyn@protonmail.com>",
+    "Timur Badretdinov <destinerx@gmail.com>"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/yogi-fi/yogi-bsccall.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@ethersproject/abi": "^5.1.0",
+    "@ethersproject/contracts": "^5.1.0",
+    "@ethersproject/providers": "^5.1.0",
+    "@types/node": "^14.14.37",
+    "js-sha3": "^0.8.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.0.3"
+  }
+}
+
