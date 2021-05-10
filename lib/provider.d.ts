@@ -5,6 +5,6 @@ export default class Provider {
     multicallAddress: string;
     constructor();
     init(provider: BaseProvider): Promise<void>;
-    getBnbBalance(address: string): any;
+    getBalance(address: string): any;
     all(calls: Call[], block?: number): Promise<any[]>;
 }

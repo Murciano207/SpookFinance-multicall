@@ -1,7 +1,7 @@
 import { BaseProvider } from '@ethersproject/providers';
 
 import { Call, all as callAll } from './call';
-import { getBnbBalance } from './calls';
+import { getBalance } from './calls';
 
 export default class Provider {
 	provider?: BaseProvider;
@@ -17,11 +17,11 @@ export default class Provider {
 		this.multicallAddress = getAddress(network.chainId);
 	}
 
-	getBnbBalance(address: string) {
+	getBalance(address: string) {
 		if (!this.provider) {
 			console.error('Provider should be initialized before use.');
 		}
-		return getBnbBalance(address, this.multicallAddress);
+		return getBalance(address, this.multicallAddress);
 	}
 
 	async all(calls: Call[], block?: number) {
@@ -35,7 +35,8 @@ export default class Provider {
 
 function getAddress(chainId: number): string {
 	const addressMap: Record<number, string> = {
-		56: '0x7B23A56572cBC04035da7852a5427066EC2C2040'
+		56:  '0x7B23A56572cBC04035da7852a5427066EC2C2040',
+		137: '0x7B23A56572cBC04035da7852a5427066EC2C2040'
 	};
 	const address = addressMap[chainId];
 	return address;

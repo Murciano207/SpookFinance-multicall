@@ -1,5 +1,5 @@
 {
-  "name": "bsccall",
+  "name": "yogi-multicall",
   "version": "1.0.0",
   "description": "ethers.js-compatible wrapper around Multicall for BSC",
   "main": "lib/index.js",
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/yogi-fi/yogi-bsccall.git"
+    "url": "git://github.com/yogi-fi/yogi-multicall.git"
   },
   "license": "MIT",
   "dependencies": {

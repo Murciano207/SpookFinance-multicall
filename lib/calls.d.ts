@@ -1,1 +1,1 @@
-export declare function getBnbBalance(address: string, multicallAddress: string): any;
+export declare function getBalance(address: string, multicallAddress: string): any;

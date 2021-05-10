@@ -98,7 +98,7 @@
                 "name": "addr",
                 "type": "address"
             }],
-        "name": "getBnbBalance",
+        "name": "getBalance",
         "outputs": [{
                 "internalType": "uint256",
                 "name": "balance",
