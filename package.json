@@ -1,6 +1,6 @@
 {
   "name": "yogi-multicall",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "ethers.js-compatible wrapper around Multicall for BSC",
   "main": "lib/index.js",
   "contributors": [
@@ -10,7 +10,8 @@
   ],
   "scripts": {
     "build": "tsc",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+    "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx}'"
   },
   "repository": {
     "type": "git",
@@ -25,7 +26,7 @@
     "js-sha3": "^0.8.0"
   },
   "devDependencies": {
+    "prettier": "^2.3.0",
     "typescript": "^4.0.3"
   }
 }
-
